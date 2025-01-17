@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lucida+Sans+Unicode');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", sans-serif;
+    background-color: #ffffff;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #3399cc;
+    border: 25px solid #2b81ac;
+    text-align: left;
+}
+
+.text-title {
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.weather-list {
+    list-style: none;
+    text-align: center;
+    font-size: 0; /* Усунення пробілів між блоками */
+    display: block; /* Дозволяє переносити рядки */
+}
+
+.weather-list__item {
+    display: inline-block;
+    width: 25%; /* Ширина кожного елемента */
+    height: 120px;
+    vertical-align: top;
+    background-color: #fff;
+    color: #fff; /* Білий текст */
+    padding: 10px;
+    border: 2px solid #fff;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    font-size: 22px; /* Повернення розміру тексту */
+    box-sizing: border-box; /* Врахування бордерів у ширині */
+    text-align: center; /* Центрування тексту та іконок */
+}
+
+.weather-list__item_half {
+    width: 50%; /* Половина ширини */
+}
+
+.weather-list__item_full {
+    width: 100%; /* Повна ширина */
+}
+
+.weather-list__item:hover {
+    opacity: 0.7;
+}
+
+.weather-list__item_blue { background-color: #3399CC; }
+.weather-list__item_aquamarine { background-color: #33CCCC; }
+.weather-list__item_purple { background-color: #996699; }
+.weather-list__item_red { background-color: #C24747; }
+.weather-list__item_orange { background-color: #E2674A; }
+.weather-list__item_yellow { background-color: #FFCC66; }
+.weather-list__item_green { background-color: #99CC99; }
+.weather-list__item_teal { background-color: #669999; }
+.weather-list__item_pink { background-color: #CC6699; }
+.weather-list__item_darkgreen { background-color: #339966; }
+
+.text-size-large {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #fff; /* Білий текст */
+}
+
+.weather-list__item i {
+    font-size: 30px; /* Розмір іконок */
+    color: #fff; /* Білі іконки */
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+}
